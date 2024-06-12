@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 const Contact = () => {
   const { t } = useTranslation();
 
-  // Function to open Google Maps with navigation to the destination
+  // Function to open Google Maps with navigation to the destination 
   const openGoogleMaps = () => {
     const mapsUrl = `https://maps.app.goo.gl/jiMsyfLcrgvFGwyJ8`;
     window.open(mapsUrl, '_blank');
