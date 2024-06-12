@@ -1,6 +1,6 @@
 import React from 'react';
 import EmailForm from './EmailForm';
-import { Typography, Link, Paper } from '@mui/material';
+import { Typography, Link } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
