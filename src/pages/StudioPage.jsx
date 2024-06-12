@@ -31,7 +31,7 @@ const StudioPage = () => {
          buttonText={"Bize Ulaşın"}
          phoneNumber={"+903122785271"}/>
         <Steps steps={stepsData} headerText={"Stüdyo'da"}/>
-        <GalleryPage imageName={"studio"} path={"/assets/gallery/studio"} galleryHeaderText={"Çekimlerimiz"}/>
+        {/*<GalleryPage imageName={"studio"} path={"/assets/gallery/studio"} galleryHeaderText={"Çekimlerimiz"}/>*/}
         <Contact/>
         </>
   );
