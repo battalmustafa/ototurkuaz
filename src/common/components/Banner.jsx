@@ -32,34 +32,34 @@ const Banner = ({ headerText, subText, image, buttonText, phoneNumber }) => {
           >
             <div className='w-1/3 opacity-70'></div>
             <div className='w-1/3 opacity-70'></div>
-            <div className='grid grid-rows-3'> 
-              <div></div>
-              <div></div>
-              <div className="p-4 font-semibold relative backdrop-blur-xl lg:bg-transparent bottom-0">
-                <h1 className="title-font sm:text-4xl text-mb-4 font-bold text-white grid grid-row-2 justify-center">
-                  {headerText}
-                </h1>
-                <div className='flex justify-center py-4'>
-                  <p>
-                    <span className='hover:animate-magnify-slow text-xl text-red-500 font-bold '>{t('Premium')}</span>
-                    <span className='hover:animate-magnify-slow text-xl text-white font-bold'> {t('Hizmet, ')}</span>
-                  </p>
-                  <p>
-                    <span className='hover:animate-magnify-slow text-xl text-red-500 font-bold '>{t('Premium')}</span>
-                    <span className='hover:animate-magnify-slow text-xl text-white font-bold '> {t('Güvence')}</span>
-                  </p>
-                </div>
-                <p className="mb-8 leading-relaxed text-white">
-                  {subText}
-                </p>
-                <div className="flex justify-center">
-                  {/* Anchor tag with tel link */}
-                  <a href={generateTelLink()} className={`inline-flex text-white bg-button border-0 py-2 px-6 focus:outline-none hover:shadow-lg rounded text-lg`} target="_self">
-                    {buttonText}
-                  </a>
-                </div>
-              </div>
-            </div>
+            <div className='flex flex-col sm:flex-row'> 
+  <div className='flex-1'></div>
+  <div className='flex-1'></div>
+  <div className="p-4 font-semibold sm:row-span-4 relative backdrop-blur-xl lg:bg-transparent  bg-gray-600 bg-opacity-80 sm:bg-opacity-0 lg:my-24">
+    <h1 className="title-font sm:text-4xl text-mb-4 font-bold text-white grid grid-row-2 justify-center">
+      {headerText}
+    </h1>
+    <div className='flex justify-center py-4'>
+      <p>
+        <span className='hover:animate-magnify-slow text-xl text-red-500 font-bold '>{t('Premium')}</span>
+        <span className='hover:animate-magnify-slow text-xl text-white font-bold'> {t('Hizmet, ')}</span>
+      </p>
+      <p>
+        <span className='hover:animate-magnify-slow text-xl text-red-500 font-bold '>{t('Premium')}</span>
+        <span className='hover:animate-magnify-slow text-xl text-white font-bold '> {t('Güvence')}</span>
+      </p>
+    </div>
+    <p className="mb-8 leading-relaxed text-white">
+      {subText}
+    </p>
+    <div className="flex justify-center">
+      <a href={generateTelLink()} className="inline-flex text-white bg-button border-0 py-2 px-6 focus:outline-none hover:shadow-lg rounded text-lg" target="_self">
+        {buttonText}
+      </a>
+    </div>
+  </div>
+</div>
+
           </div>
         </div>
       </section>
