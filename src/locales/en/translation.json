@@ -1,0 +1,59 @@
+{
+  "common": {
+    "welcome": "Welcome to our React App!",
+    "greeting": "Hello, {name}!",
+    "button": "Ok",
+    "products": "Products",
+    "back":"Back",
+    "marketplace":"Marketplace",
+    "bannercargo": "Delivery is provided to all parts of Turkey through contracted cargo companies.",
+    "followus":"Follow Us",
+    "detail":"Product Detail",
+    "dialogclose": "Close",
+
+    "purchase":"Buy from the Store"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "maintenance",
+    "roomspage": "Car Dealer",
+    "gallery": "Studio",
+    "privileges": "Detailing",
+    "contact": "Contact"
+  },
+  "validation": {
+    "invalidEmail": "Please enter a valid email address",
+    "fixErrors": "Please fix the input errors before sending the email."
+  },
+  "emailSent": {
+    "success": "Email sent successfully",
+    "failure": "Failed to send email: {message}",
+    "error": "Error sending email: {error}"
+  },
+  "emailForm": {
+    "title": "Send Email",
+    "nameLabel": "Name:",
+    "emailLabel": "Email:",
+    "subjectLabel": "Subject:",
+    "messageLabel": "Message:",
+    "sendButton": "Send Email"
+  },
+  "about": {
+    "title": "About Us",
+    "content1": "There are 3 different flat options in our facility, which consists of 19 flats in total.",
+    "content2": "You can choose from garden duplex, middle floor and roof duplex options.",
+    "content3": "There is a jacuzzi on the large terrace of our roof duplex apartments.",
+    "content4": "Our garden duplex apartments have a private pool for you.",
+    "content5": "There is a common pool for all our guests in our facility.",
+    "content6": "All apartments have kitchen and kitchen equipment.",
+    "content7": "All apartments have a washing machine, dishwasher and dryer.",
+    "content8": "You have free access to our private beach, Yalı Beach, which is 3 kilometers away from the sea.",
+    "content9": "Check-in time is 15.00 at noon and check-out time is 11.00 noon to our apartments."
+
+  },
+  "contact":{
+    "email": "Email:",
+    "phone": "Phone:",
+    "address": "Address"
+  }
+}

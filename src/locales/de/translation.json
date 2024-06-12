@@ -1,0 +1,49 @@
+{
+    "common": {
+      "welcome": "Willkommen in unserer React-App!",
+      "greeting": "Hallo, {name}!",
+      "button": "Ok",
+      "products": "Produkte",
+      "bannercargo": "Die Lieferung wird in alle Teile der Türkei über vertraglich vereinbarte Speditionen ermöglicht.",
+      "back": "Zürück",
+      "marketplace":"Marktplatz",
+      "followus": "Folgen Sie uns",
+      "detail": "Produktdetail",
+      "purchase":"Kaufen Sie im Laden"
+
+    },
+    "navigation": {
+      "home": "Startseite",
+      "about": "Über",
+      "contact": "Kontakt"
+    },
+    "validation": {
+      "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "fixErrors": "Bitte beheben Sie die Eingabefehler, bevor Sie die E-Mail senden."
+    },
+    "emailSent": {
+      "success": "E-Mail erfolgreich gesendet",
+      "failure": "Fehler beim Senden der E-Mail: {message}",
+      "error": "Fehler beim Senden der E-Mail: {error}"
+    },
+    "emailForm": {
+      "title": "E-Mail senden",
+      "nameLabel": "Name:",
+      "emailLabel": "E-Mail:",
+      "subjectLabel": "Betreff:",
+      "messageLabel": "Nachricht:",
+      "sendButton": "E-Mail senden"
+    },
+    "about": {
+      "title": "Über uns",
+      "content1": "ANKARA KARTONPİYER ist seit 2006 mit dem Konzept 'Du stellst dir vor, wir realisieren es.' tätig.",
+      "content2": "Wir versenden täglich in alle Teile der Türkei und exportieren in 4 Kontinente und 22 Länder.",
+      "content3": "Wir verwenden Rohmaterial der Marke RAVAGO, einem weltweit führenden Unternehmen in der Produktion, und bieten erstklassige Qualität zu zweitklassigen Preisen."
+    },
+    "contact": {
+      "email": "E-Mail:",
+      "phone": "Telefon:",
+      "address": "Adresse"
+      }
+      }
+  

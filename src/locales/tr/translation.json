@@ -1,0 +1,59 @@
+{
+  "common": {
+    "welcome": "React Uygulamamıza Hoş Geldiniz!",
+    "greeting": "Merhaba, {name}!",
+    "button": "Tamam",
+    "products": "Ürünler",
+    "back":"Geri",
+    "marketplace":"Pazaryeri Mağazalarımız",
+    "bannercargo": "Türkiye’nin her yerine anlaşmalı kargo ve lojistik firmaları ile gönderim sağlanmaktadır.",
+    "followus": "Bizi Takip Edin",
+    "detail": "Ürün Detayı",
+    "dialogclose": "Kapat",
+    "purchase": "Mağazadan Satın Al"
+
+  },
+  "navigation": {
+    "home": "Ana Sayfa",
+    "about": "Servis",
+    "roomspage": "Oto Satış",
+    "gallery": "Stüdyo",
+    "privileges": "Detailing",
+    "contact": "İletişim"
+  },
+  "validation": {
+    "invalidEmail": "Lütfen geçerli bir e-posta adresi girin",
+    "fixErrors": "Lütfen e-postayı göndermeden önce hataları düzeltin."
+  },
+  "emailSent": {
+    "success": "E-posta başarıyla gönderildi",
+    "failure": "E-posta gönderilemedi: {message}",
+    "error": "E-posta gönderme hatası: {error}"
+  },
+  "emailForm": {
+    "title": "E-posta Gönder",
+    "nameLabel": "Ad:",
+    "emailLabel": "E-posta:",
+    "subjectLabel": "Konu:",
+    "messageLabel": "Mesaj:",
+    "sendButton": "E-posta Gönder"
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "content1": "Toplam 19 daireden oluşan tesisimizde 3 farklı daire seçeneği bulunmaktadır.",
+    "content2": "Bahçe dubleks, ara kat ve çatı dubleks seçeneklerinden dilediğinizi seçebilirsiniz.",
+    "content3": "Çatı dubleks dairelerimizin geniş terasında jakuzi bulunmaktadır.",
+    "content4": "Bahçe dubleks dairelerimizde size özel havuz bulunmaktadır.",
+    "content5": "Tesisimizde tüm misafirlerimiz için ortak havuz bulunmaktadır.",
+    "content6": "Tüm dairelerde mutfak ve mutfak ekipmanları mevcuttur.",
+    "content7": "Tüm dairelerde çamaşır makinesi, bulaşık makinesi ve kurutma makinesi bulunmaktadır.",
+    "content8": "Denize 3 km uzaklıkta bulunan özel plajımız Yalı Plajı'na ücretsiz giriş hakkına sahipsiniz.",
+    "content9": "Dairelerimize giriş saati öğlen 14.00, çıkış saati öğlen 11.00'dir."
+
+  },
+  "contact": {
+    "email": "E-posta:",
+    "phone": "Telefon:",
+    "address": "Adres:"
+  }
+}

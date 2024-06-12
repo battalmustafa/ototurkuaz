@@ -1,0 +1,283 @@
+[
+    {
+        "id": 1,
+        "name": "Garden Duplex Apartment",
+      "images": [
+        "assets/GardenDuplexApartment/13.jpg",
+        "assets/GardenDuplexApartment/1.jpg",
+        "assets/GardenDuplexApartment/2.jpg",
+        "assets/GardenDuplexApartment/3.jpg",
+        "assets/GardenDuplexApartment/4.jpg",
+        "assets/GardenDuplexApartment/5.jpg",
+        "assets/GardenDuplexApartment/6.jpg",
+
+        "assets/GardenDuplexApartment/8.jpg",
+        "assets/GardenDuplexApartment/9.jpg",
+        "assets/GardenDuplexApartment/10.jpg",
+        "assets/GardenDuplexApartment/11.jpg",
+        "assets/GardenDuplexApartment/12.jpg",
+        "assets/GardenDuplexApartment/14.jpg"
+
+    ],
+      "features": [
+        "2+1 room - 85 sqm",
+        "2 bedrooms ",
+        "2 bathrooms",
+        "1 hall + kitchen",
+        "Private pool",
+        "Free beach entrance"
+      ],
+      "amenities": [
+        "Garden view",
+        "Pool view",
+        "Seating area",
+        "Cable TV",
+        "Internet access",
+        "Wireless internet",
+        "Dishwasher",
+        "Tea-maker",
+        "Coffee machine",
+        "Iron with ironing board",
+        "Bathrobes",
+        "Hairdryer",
+        "Room safe",
+        "Non-smoking",
+        "Oven",
+        "Washing machine",
+        "Smoke Detector"
+      ],
+      "policies": [
+        "Check-in time: After 14:00 on the day of arrival.",
+        "Check-out time: 12:00 upon day of departure.",
+        "Pets: No pets allowed"
+      ]
+      
+    },
+    {
+      "id": 2,
+      "name": "Flat Apartment",
+      "images": [
+        "assets/FlatApartment/1.jpg",
+        "assets/FlatApartment/2.jpg",
+        "assets/FlatApartment/3.jpg",
+        "assets/FlatApartment/4.jpg",
+        "assets/FlatApartment/5.jpg",
+        "assets/FlatApartment/6.jpg",
+        "assets/FlatApartment/7.jpg",
+        "assets/FlatApartment/8.jpg",
+        "assets/FlatApartment/9.jpg",
+        "assets/FlatApartment/10.jpg",
+        "assets/FlatApartment/11.jpg",
+        "assets/FlatApartment/12.jpg",
+        "assets/FlatApartment/13.jpg",
+        "assets/FlatApartment/14.jpg"
+      ],
+      "features": [
+        "2 bedrooms + 1 living room",
+        "60 sqm area",
+        "2 bedrooms with balcony",
+        "1 hall + kitchen with all kitchen equipment",
+        "1 bathroom",
+        "Communal pool"
+      ],
+      "amenities": [
+        "Mountain view",
+        "Pool view",
+        "Balcony",
+        "Equipped kitchen",
+        "Seating area",
+        "Cable TV",
+        "Dishwasher",
+        "Coffee machine",
+        "Bathrobes",
+        "Non-smoking",
+        "Washing machine"
+      ],
+      "policies": [
+        "Pets allowed (with restrictions)",
+        "Check-in time: After 14:00 on the day of arrival.",
+        "Check-out time: 12:00 upon day of departure."
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Roof Duplex",
+      "images": [
+        "assets/roofDuplex/1.jpg",
+        "assets/roofDuplex/2.jpg",
+        "assets/roofDuplex/3.jpg",
+        "assets/roofDuplex/4.jpg",
+        "assets/roofDuplex/5.jpg",
+        "assets/roofDuplex/6.jpg",
+        "assets/roofDuplex/7.jpg",
+        "assets/roofDuplex/8.jpg",
+        "assets/roofDuplex/9.jpg",
+        "assets/roofDuplex/10.jpg",
+        "assets/roofDuplex/11.jpg",
+        "assets/roofDuplex/12.jpg",
+        "assets/roofDuplex/13.jpg",
+        "assets/roofDuplex/14.jpg"
+      ],
+      "features": [
+        "2 bedrooms + 1 living room",
+        "85 sqm + 40 sqm terrace",
+        "2 bedrooms",
+        "1 hall + kitchen",
+        "3 bathrooms",
+        "Jacuzzi on the terrace",
+        "Communal pool"
+      ],
+      "amenities": [
+        "Mountain view",
+        "Pool view",
+        "Seating area",
+        "Cable TV",
+        "Wireless internet",
+        "Dishwasher",
+        "Tea-maker",
+        "Coffee machine",
+        "Bathrobes",
+        "Hairdryer",
+        "Non-smoking",
+        "Washing machine"
+      ],
+      "policies": [
+        "Check-in time: After 14:00 on the day of arrival.",
+        "Check-out time: 12:00 upon day of departure.",
+        "Pets: No pets allowed"
+      ]
+    },{
+      "id": 4,
+      "name": "Standard Sea View Room",
+      "images": [
+        "assets/standartSeaview/1.jpg",
+        "assets/standartSeaview/2.jpg",
+        "assets/standartSeaview/3.jpg",
+        "assets/standartSeaview/4.jpg",
+        "assets/standartSeaview/5.jpg"
+      ],
+      "features": [
+        "A luxury room with all the facilities you would expect in a 5-star hotel.",
+        "Sea view from every room",
+        "Balcony with furniture",
+        "Adults only but hotel accepts children between 1 July - 31 August",
+        "Standard sea view rooms are located in the annex building.",
+        "Breakfast included"
+      ],
+      "amenities": [
+        "Mountain view",
+        "Balcony",
+        "Breakfast area",
+        "Cable TV",
+        "Wireless internet",
+        "Minibar",
+        "Bathrobes",
+        "Hairdryer",
+        "Room safe",
+        "Non-smoking",
+        "Pets not allowed"
+      ],
+      "policies": [
+        "Check-in time: After 14:00 on the day of arrival.",
+        "Check-out time: 12:00 upon day of departure.",
+        "Pets: No pets allowed"
+      ]
+    },{
+      "id": 5,
+      "name": "Penthouse Suite with Jacuzzi",
+      "images": [
+        "assets/penthousesuitewithjacuzzi/1.jpg",
+        "assets/penthousesuitewithjacuzzi/2.jpg",
+        "assets/penthousesuitewithjacuzzi/3.jpg",
+        "assets/penthousesuitewithjacuzzi/4.jpg",
+        "assets/penthousesuitewithjacuzzi/5.jpg",
+        "assets/penthousesuitewithjacuzzi/6.jpg",
+        "assets/penthousesuitewithjacuzzi/7.jpg",
+        "assets/penthousesuitewithjacuzzi/8.jpg",
+        "assets/penthousesuitewithjacuzzi/9.jpg",
+        "assets/penthousesuitewithjacuzzi/10.jpg",
+        "assets/penthousesuitewithjacuzzi/11.jpg",
+        "assets/penthousesuitewithjacuzzi/12.jpg"
+      ],
+      "features": [
+        "A luxury room with all the facilities you would expect in a 5-star hotel.",
+        "Sea view from every room",
+        "Terrace with furniture and sunbeds",
+        "Adults only but hotel accepts children between 1 July - 31 August",
+        "Private pool room located in the annex building",
+        "Including breakfast"
+      ],
+      "amenities": [
+        "Mountain view",
+        "Cable TV",
+        "Wireless internet",
+        "Minibar",
+        "Bathrobes",
+        "Hairdryer",
+        "Room safe",
+        "Non-smoking"
+      ],
+      "policies": [
+        "Check-in time: After 14:00 on the day of arrival.",
+        "Check-out time: 12:00 upon day of departure.",
+        "Pets: No pets allowed"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Private Pool Room with Jacuzzi",
+      "images": [
+        "assets/PrivatePoolRoomwithJacuzzi/1.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/2.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/3.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/4.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/5.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/6.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/7.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/8.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/9.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/10.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/11.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/12.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/13.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/14.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/15.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/16.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/17.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/18.jpg",
+        "assets/PrivatePoolRoomwithJacuzzi/19.jpg"
+
+      ],
+      "features": [
+        "A luxury room with all the facilities you would expect in a 5-star hotel.",
+        "Sea view from every room",
+        "Terrace with furniture and sunbeds",
+        "Adults only but hotel accepts children between 1 July - 31 August",
+        "Private pool room located in the annex building",
+        "Breakfast included"
+      ],
+      "amenities": [
+        "Mountain view",
+        "Cable TV",
+        "Wireless internet",
+        "Tea-maker",
+        "Minibar",
+        "Bathrobes",
+        "Hairdryer",
+        "Room safe"
+      ],
+      "policies": [
+        "Check-in time: After 14:00 on the day of arrival.",
+        "Check-out time: 12:00 upon day of departure.",
+        "Pets: No pets allowed"
+      ]
+    }
+    
+    
+    
+    
+    
+    
+    
+  ]
+  
