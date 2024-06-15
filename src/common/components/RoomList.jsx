@@ -40,7 +40,7 @@ const RoomList = () => {
                 src={process.env.PUBLIC_URL + "/assets/gallery/turkuazmiddle.jpg"}
               />
               <div className="absolute bottom-0 min-w-full space-x-44 bg-gray-600 bg-opacity-50 text-white font-semibold lg:text-2xl sm:text-sm p-2 rounded backdrop-filter backdrop-blur-sm">
-                <p><span className="text-red-500">Premium</span> Kalite,</p> 
+                <p><span className="text-red-500">Premium</span> Kalite</p> 
                 <p><span className="text-red-500">Premium</span> Güvence </p>
               </div>
             </Link>
