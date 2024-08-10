@@ -80,7 +80,7 @@ const EmailForm = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded shadow-md">
+    <div className="max-w-md mx-auto mt-8 p-6">
       <h2 className="text-2xl font-semibold mb-6">{t('emailForm.title')}</h2>
 
       <div className="mb-4">

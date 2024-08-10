@@ -5,7 +5,6 @@ import { useLocation } from 'react-router-dom';
 export const Whatsapp = () => {
   const location = useLocation();
   const isMobile = window.innerWidth <= 768; // Adjust the breakpoint according to your design
-console.log()
   const handleWhatsAppClick = () => {
     let phoneNumber = location.pathname.includes("service") ? '+905413813406' :'+905311007171' ; // Replace with the phone number you want to open in WhatsApp
 

@@ -10,7 +10,7 @@ const PageWrapper = ({ children }) => {
   }, [location]);
 
   return (
-    <div className=' mx-auto px-2 bg-background animate-fade-in-slow'>
+    <div className=' mx-auto px-2 bg-background animate-fade-in-slow rounded-t-3xl'>
       <div
         style={{
           paddingTop: 'env(safe-area-inset-top)',

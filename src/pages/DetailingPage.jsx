@@ -48,7 +48,7 @@ const DetailingPage = () => {
     const { t } = useTranslation();
 
   return (
-        <> <Banner image={"/assets/gallery/detailing.jpg"} headerText={"Detailing  ototurkuaz "} 
+        <> <Banner image={"/assets/gallery/detailing.jpg"} headerText={"Ototurkuaz Detailing "} 
         subText={"Aracınızn detaylı temizlik ve bakım işlemleriniz hassasiyetle yapıyoruz. Yapılan işlemlerle iç ve dış aksamların korunmasını sağlıyoruz."}
          buttonText={"Bize Ulaşın"}
          phoneNumber={"+903122785271"}/>

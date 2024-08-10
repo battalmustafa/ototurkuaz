@@ -37,13 +37,13 @@ const HomePage = () => {
 
   return (
         <>
-        <Banner image={"/assets/gallery/home.jpg"} headerText={" ototurkuaz "} 
-        subText={""}
+        <Banner image={ "/assets/gallery/banner/6.jpeg"} headerText={" ototurkuaz "} 
+        subText={"Galeri, Servis, Detailing, Studio"}
          buttonText={"Bize Ulaşın"}
          phoneNumber={"+903122785271"}/>
        
         <RoomList/>
-        <Steps steps={stepsData} headerText={''} itemSpacing={"pb-4"}/>
+        <Steps steps={stepsData} headerText={'da'} itemSpacing={"pb-4"}/>
         <Teams/>
         <Testimonial/>
         <Contact/>

@@ -5,9 +5,9 @@ import NoCrashIcon from '@mui/icons-material/NoCrash';
 
 const Steps = ({ steps, headerText, itemSpacing = "pb-4" }) => {
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font bg-teams-gradient rounded-t-3xl pt-4">
       <h1 className="sm:text-3xl text-2xl font-medium title-font text-center mb-4 text-gray-900">
-        ototurkuaz premium {headerText} sizi ne bekliyor ?
+        ototurkuaz {headerText} sizi ne bekliyor ?
       </h1>
       <div className="container px-5 py-24 mx-auto flex-wrap">
         {steps.map((step, index) => (

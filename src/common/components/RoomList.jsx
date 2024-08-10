@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const RoomList = () => {
   return (
@@ -11,24 +12,31 @@ const RoomList = () => {
               <div className="relative">
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block rounded hover:animate-magnify-slow"
-                  src={process.env.PUBLIC_URL + "/assets/gallery/DSC03563.jpg"}
+                  className="w-full object-cover h-60 object-center block rounded hover:animate-magnify-slow"
+                  src={process.env.PUBLIC_URL + "https://www.borusanoto.com/content/assets/images/teaser/2.webp"}
                 />
-                <div className="absolute bottom-2  bg-gray-600 bg-opacity-50  text-white font-semibold text-2xl p-2 px-8 rounded backdrop-filter backdrop-blur-sm">
-                  Oto Satış
-                </div>
+                <div className="absolute bottom-2  justify-between bg-gray-600 bg-opacity-50 text-white font-semibold text-2xl p-2 px-8 rounded backdrop-filter backdrop-blur-sm flex items-center">
+                <span>Oto Satış</span>
+                <span className="ml-2 flex justify-center items-center hover:bg-textNavy bg-button text-white p-2 rounded-full">
+                  <ArrowForwardIcon />
+                </span>
+              </div>
+
               </div>
             </Link>
             <Link to="/service">
               <div className="relative">
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block rounded hover:animate-magnify-slow"
+                  className="w-full object-cover h-60 object-center block rounded hover:animate-magnify-slow"
                   src={process.env.PUBLIC_URL + "/assets/gallery/servis1.jpg"}
                 />
-                <div className="absolute bottom-2  bg-gray-600 bg-opacity-50 text-white font-semibold text-2xl p-2 px-8 rounded backdrop-filter backdrop-blur-sm">
-                  Servis
-                </div>
+                <div className="absolute bottom-2  justify-between bg-gray-600 bg-opacity-50 text-white font-semibold text-2xl p-2 px-8 rounded backdrop-filter backdrop-blur-sm flex items-center">
+                <span>Servis</span>
+                <span className="ml-2 flex justify-center items-center hover:bg-textNavy bg-button text-white p-2 rounded-full">
+                  <ArrowForwardIcon />
+                </span>
+              </div>
               </div>
             </Link>
           </div>
@@ -37,37 +45,40 @@ const RoomList = () => {
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block rounded"
-                src={process.env.PUBLIC_URL + "/assets/gallery/turkuazmiddle.jpg"}
-              />
-              <div className="absolute bottom-0 min-w-full space-x-44 bg-gray-600 bg-opacity-50 text-white font-semibold lg:text-2xl sm:text-sm p-2 rounded backdrop-filter backdrop-blur-sm">
-                <p><span className="text-red-500">Premium</span> Kalite</p> 
-                <p><span className="text-red-500">Premium</span> Güvence </p>
-              </div>
+                src={process.env.PUBLIC_URL + "/assets/gallery/banner/8.jpeg"}
+                />
+             
             </Link>
           </div>
           <div className="col-span-1 grid grid-row-2 gap-8">
-            <Link to="/detailing">
-              <div className="relative">
-                <img
-                  alt="gallery"
-                  className="w-full object-cover h-full object-center block rounded hover:animate-magnify-slow"
-                  src={process.env.PUBLIC_URL + "/assets/gallery/studio.jpg"}
-                />
-                <div className="absolute bottom-2  bg-gray-600 bg-opacity-50 text-white font-semibold text-2xl p-2 px-8 rounded backdrop-filter backdrop-blur-sm">
-                  Stüdyo
-                </div>
-              </div>
-            </Link>
             <Link to="/studio">
               <div className="relative">
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block rounded hover:animate-magnify-slow"
-                  src={process.env.PUBLIC_URL + "/assets/gallery/detailing.jpg"}
+                  className="w-full object-cover h-60 object-center block rounded hover:animate-magnify-slow"
+                  src={process.env.PUBLIC_URL + "/assets/gallery/banner/4.jpeg"}
                 />
-                <div className="absolute bottom-2  bg-gray-600 bg-opacity-50 text-white font-semibold text-2xl p-2 px-8 rounded backdrop-filter backdrop-blur-sm">
-                  Detailing
-                </div>
+                <div className="absolute bottom-2  justify-between bg-gray-600 bg-opacity-50 text-white font-semibold text-2xl p-2 px-8 rounded backdrop-filter backdrop-blur-sm flex items-center">
+                <span>Studio</span>
+                <span className="ml-2 flex justify-center items-center  hover:bg-textNavy bg-button text-white p-2 rounded-full">
+                  <ArrowForwardIcon />
+                </span>
+              </div>
+              </div>
+            </Link>
+            <Link to="/detailing">
+              <div className="relative">
+                <img
+                  alt="gallery"
+                  className="w-full object-cover h-60 object-center block rounded hover:animate-magnify-slow"
+                  src={process.env.PUBLIC_URL + "/assets/gallery/banner/11.jpeg"}
+                />
+                <div className="absolute bottom-2  justify-between bg-gray-600 bg-opacity-50 text-white font-semibold text-2xl p-2 px-8 rounded backdrop-filter backdrop-blur-sm flex items-center">
+                <span>Detailing</span>
+                <span className="ml-2 flex justify-center items-center  hover:bg-textNavy bg-button text-white p-2 rounded-full">
+                  <ArrowForwardIcon />
+                </span>
+              </div>
               </div>
             </Link>
           </div>

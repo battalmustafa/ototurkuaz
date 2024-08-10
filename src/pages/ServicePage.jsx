@@ -39,7 +39,7 @@ const ServicePage = () => {
 
   return (
         <>
-        <Banner image={"/assets/gallery/service/4.jpg"} headerText={"Servis ototurkuaz "} 
+        <Banner image={"/assets/gallery/service/4.jpg"} headerText={"Ototurkuaz Servis"} 
         subText={"BMW ve MINI araçlarınız için özel servis hizmeti sağlamaktayız."}
          buttonText={"Bize Ulaşın"}
          phoneNumber={"+903122785271"}/>

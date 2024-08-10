@@ -10,8 +10,8 @@ import GalleryPage from '../common/components/GalleryPage';
 const stepsData = [
   {
     icon: 'video.png',
-    headerText: 'Stüdyo Fotograf Çekimleri',
-    subText: 'Detaylı ilan fotğrafı çekimi'
+    headerText: 'Stüdyo Çekimleri',
+    subText: 'Detaylı ilan fotoğrafı çekimi'
   },
   
   {
@@ -26,7 +26,7 @@ const StudioPage = () => {
 
   return (
         <>
-         <Banner image={"/assets/gallery/studio.jpg"} headerText={"Stüdyo ototurkuaz "} 
+         <Banner image={"/assets/gallery/banner/1.jpeg"} headerText={"Ototurkuaz Studio"} 
         subText={"Stüdyomuzda aracınızı en iyi şekilde pazarlamanızı sağlayacak görüntüleme hizmeti veriyoruz."}
          buttonText={"Bize Ulaşın"}
          phoneNumber={"+903122785271"}/>

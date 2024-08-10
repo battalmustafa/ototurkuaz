@@ -32,7 +32,7 @@ const DealerPage = () => {
     const { t } = useTranslation();
 
   return (
-        <> <Banner headerText={"Ototurkuaz Galeri"} image={"/assets/gallery/DSC03563.jpg"}
+        <> <Banner headerText={"Ototurkuaz Galeri"} image={"/assets/gallery/banner/6.jpeg"}
         subText={""}
          buttonText={"Bize Ulaşın"}
          phoneNumber={"+903122785271"}/>

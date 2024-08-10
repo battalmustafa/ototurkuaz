@@ -89,9 +89,9 @@ export const Header = () => {
   return (
     <>
       {!isMobile && (
-        <div className="bg-headerBackground sticky top-0 z-20 max-w-8xl mx-auto rounded-b-lg py-4 px-32 text-white flex justify-between items-center">
+        <div className="bg-headerBackground sticky top-0 z-20 max-w-8xl mx-auto  py-4 px-32 text-white flex justify-between items-center">
           <Link to='/'>
-            <Logo src={'/logonew.png'} width={120} height={800} />
+            <Logo   />
           </Link>
 
           <div className="grid grid-flow-col gap-2">

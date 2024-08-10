@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        // Define the gradient background
-        'background': 'linear-gradient(to top, #eeeeee, #ffffff)',
+        'custom-gradient': 'linear-gradient(to bottom, #f6f6f6, #ffffff)', 
+        'teams-gradient': 'linear-gradient(to bottom, #f6f6f6, #ffffff)',
+
       },
       keyframes: {
         fadeIn: {
@@ -35,36 +36,35 @@ module.exports = {
         },
       },
       animation: {
-        // Extend the animation duration for the 'fade-in-slow' animation
         'fade-in-slow': 'fadeIn 3s ease-in-out', // Example: 3 seconds duration
         'fade-out-slow': 'fadeOut 3s ease-in-out', // Example: 3 seconds duration
         'magnify-slow': 'magnify 1s ease-in-out', // Example: 3 seconds duration
         'slide-in-right': 'slideInRight 2s ease-in-out',
         'slide-in-up': 'slideInUp 1s ease-in-out',
-
         'card-flip': 'flip 1s ease-in-out',
       },
       colors: {
-        // Background Color
         background: 'gradient-to-r from-teal-700 via-teal-900 to-blue-900',
-
-        // Button Color
         button: '#0166b1',
         buttonPurchase: '#131834',
-        // Text Color
         text: '#333333',
         textGold: '#9c8b58',
         textNavy: '#44566f',
-
-
-        // Header Background Color
-        headerBackground: '#0c0e0e',
-
-        // Footer Background Color
-        footerBackground: '#0c0e0e',
+        headerBackground: '#000000',
+        footerBackground: '#000000',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      addUtilities({
+        '.glass-effect': {
+          'background-color': 'rgba(255, 255, 255, 0.2)',
+          'backdrop-filter': 'blur(10px)',
+          '-webkit-backdrop-filter': 'blur(10px)',
+          'border': '1px solid rgba(255, 255, 255, 0.3)',
+        },
+      }, ['responsive', 'hover']);
+    },
+  ],
 };
- 
