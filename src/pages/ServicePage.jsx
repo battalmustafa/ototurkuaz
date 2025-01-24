@@ -2,11 +2,12 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Banner from '../common/components/Banner';
 import Contact from '../common/components/Contact';
-import RoomList from '../common/components/RoomList';
 import ServiceContent from '../common/components/ServiceContent';
 import Steps from '../common/components/Steps';
 import GalleryPage from '../common/components/GalleryPage';
+import ServiceGrid from '../common/components/ServiceGrid';
 import Testimonial from '../common/components/Testimonial';
+
 const stepsData = [
   {
     icon: 'maintenance.png',
@@ -43,10 +44,13 @@ const ServicePage = () => {
         subText={"BMW ve MINI araçlarınız için özel servis hizmeti sağlamaktayız."}
          buttonText={"Bize Ulaşın"}
          phoneNumber={"+903122785271"}/>
-       
+                 <ServiceGrid/>
+
         <ServiceContent/>
+
         <Steps steps={stepsData} headerText={"Servis'de"}/>
         <GalleryPage imageName={""} path={"/assets/gallery/service"} galleryHeaderText={"Servisimizden Fotoğraflar"} imageCount={10}/>
+        <Testimonial/>
 
         <Contact/>
         </>

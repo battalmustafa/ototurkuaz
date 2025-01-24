@@ -17,7 +17,7 @@ const Logo = ({ alt, width, height, className }) => {
   } else if (location.pathname.includes('studio')) {
     src = "/assets/gallery/logos/logoStudio.png";
   } else {
-    src = "/assets/gallery/logos/logoEmpty.png"; 
+    src = "/assets/gallery/logos/logoService.png";
   }
 
   return (

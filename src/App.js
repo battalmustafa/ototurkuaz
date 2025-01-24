@@ -26,7 +26,7 @@ function App() {
       <PageWrapper>
         <Suspense fallback={<Loading/>}>
           <Routes>
-            <Route exact path="/" element={<HomePage />} />
+            <Route exact path="/" element={<ServicePage />} />
             <Route path="/about" element={<About />} />
             <Route path="/roomspage" element={<RoomsPage />} />
             <Route path="/roomdetail" element={<RoomDetail />} />

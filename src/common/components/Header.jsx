@@ -43,24 +43,6 @@ export const Header = () => {
         </ListItemIcon>
         <ListItemText primary={t('navigation.roomspage')} />
       </ListItem>
-      <ListItem button component={Link} to="/service">
-        <ListItemIcon>
-          <BuildIcon />
-        </ListItemIcon>
-        <ListItemText primary={t('navigation.about')} />
-      </ListItem>
-      <ListItem button component={Link} to="/studio">
-        <ListItemIcon>
-          <PhotoIcon />
-        </ListItemIcon>
-        <ListItemText primary={t('navigation.gallery')} />
-      </ListItem>
-      <ListItem button component={Link} to="/detailing">
-        <ListItemIcon>
-          <StarIcon />
-        </ListItemIcon>
-        <ListItemText primary={t('navigation.privileges')} />
-      </ListItem>
       <ListItem button component={Link} to="/contact">
         <ListItemIcon>
           <ContactMailIcon />
@@ -113,33 +95,7 @@ export const Header = () => {
                 {t('navigation.roomspage')}
               </button>
             </Link>
-            <Link to="/service">
-              <button
-                className={`${
-                  isButtonSelected('/service') ? 'border border-white text-white rounded' : ''
-                } text-white font-bold px-4 py-2 hover:bg-button hover:text-white rounded focus:outline-none`}
-              >
-                {t('navigation.about')}
-              </button>
-            </Link>
-            <Link to="/detailing">
-              <button
-                className={`${
-                  isButtonSelected('/detailing') ? 'border border-white text-white rounded' : ''
-                } text-white font-bold px-4 py-2 hover:bg-button hover:text-white rounded focus:outline-none`}
-              >
-                {t('navigation.privileges')}
-              </button>
-            </Link>
-            <Link to="/studio">
-              <button
-                className={`${
-                  isButtonSelected('/studio') ? 'border border-white text-white rounded' : ''
-                } text-white font-bold px-4 py-2 hover:bg-button hover:text-white rounded focus:outline-none`}
-              >
-                {t('navigation.gallery')}
-              </button>
-            </Link>
+          
             <Link to="/contact">
               <button
                 className={`${

@@ -35,12 +35,10 @@ export const Footer = () => {
             <Link to='/' className="hover:underline">{t('navigation.home')}</Link>
             <Link to='/dealer' className="hover:underline">{t('navigation.roomspage')}</Link>
             <Link to='/service' className="hover:underline">{t('navigation.about')}</Link>
-            <Link to='/detailing' className="hover:underline">{t('navigation.gallery')}</Link>
-            <Link to='/studio' className="hover:underline">{t('navigation.privileges')}</Link>
             <Link to='/contact' className="hover:underline">{t('navigation.contact')}</Link>
           </div>
           <div className="flex justify-center space-x-4">
-            <span>&copy; {currentYear} Ototurkuaz Premium</span>
+            <span>&copy; {currentYear} Ototurkuaz Service</span>
             <a href={process.env.PUBLIC_URL + '/pdf/ototurkuaz.pdf'} download className='hover:underline'>
               {t('Broşür indir')}
             </a>
