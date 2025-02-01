@@ -17,6 +17,7 @@ const ServicePage = lazy(() => import('./pages/ServicePage'));
 const DetailingPage = lazy(() => import('./pages/DetailingPage'))
 const DealerPage = lazy(() => import('./pages/DealerPage'))
 const StudioPage = lazy(() => import('./pages/StudioPage'))
+const ServiceBlogPage = lazy(() => import('./pages/ServiceBlogPage'))
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/service" element={<ServicePage />} />
+            <Route path="/service/:slug" element={<ServiceBlogPage />} />
             <Route path="/studio" element={<StudioPage />} />
             <Route path="/dealer" element={<DealerPage />} />
             <Route path="/detailing" element={<DetailingPage />} />

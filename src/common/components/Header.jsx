@@ -1,133 +1,140 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Drawer from '@mui/material/Drawer';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import ListItemIcon from '@mui/material/ListItemIcon';
+import { motion, AnimatePresence } from 'framer-motion';
 import MenuIcon from '@mui/icons-material/Menu';
-import HomeIcon from '@mui/icons-material/Home';
-import StoreIcon from '@mui/icons-material/Store';
-import BuildIcon from '@mui/icons-material/Build';
-import PhotoIcon from '@mui/icons-material/Photo';
-import StarIcon from '@mui/icons-material/Star';
-import ContactMailIcon from '@mui/icons-material/ContactMail';
+import CloseIcon from '@mui/icons-material/Close';
 import Logo from '../ui/Logo';
-import { LangSwitcher } from './LangSwitcher';
 
 export const Header = () => {
   const { t } = useTranslation();
-  const [drawerOpen, setDrawerOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 767);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
-  const isButtonSelected = (path) => {
-    return location.pathname === path;
-  };
-
-  const list = (
-    <List onClick={() => setDrawerOpen(false)}>
-      <ListItem button component={Link} to="/">
-        <ListItemIcon>
-          <HomeIcon />
-        </ListItemIcon>
-        <ListItemText primary={t('navigation.home')} />
-      </ListItem>
-      <ListItem button component={Link} to="/dealer">
-        <ListItemIcon>
-          <StoreIcon />
-        </ListItemIcon>
-        <ListItemText primary={t('navigation.roomspage')} />
-      </ListItem>
-      <ListItem button component={Link} to="/contact">
-        <ListItemIcon>
-          <ContactMailIcon />
-        </ListItemIcon>
-        <ListItemText primary={t('navigation.contact')} />
-      </ListItem>
-    </List>
-  );
-
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 767);
-    };
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    const handleScroll = () => setScrolled(window.scrollY > 20);
 
     window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  const toggleDrawer = (open) => () => {
-    setDrawerOpen(open);
+  const isActive = (path) => location.pathname === path;
+
+  const navItems = [
+    { path: '/', label: t('navigation.home') },
+    { path: '/dealer', label: t('navigation.roomspage') },
+    { path: '/contact', label: t('navigation.contact') }
+  ];
+
+  const headerVariants = {
+    initial: { y: -100 },
+    animate: { y: 0, transition: { type: 'spring', stiffness: 100 } }
+  };
+
+  const mobileMenuVariants = {
+    closed: { opacity: 0, x: '-100%' },
+    open: { opacity: 1, x: 0, transition: { type: 'tween', duration: 0.3 } }
   };
 
   return (
-    <>
-      {!isMobile && (
-        <div className="bg-headerBackground sticky top-0 z-20 max-w-8xl mx-auto  py-4 px-32 text-white flex justify-between items-center">
-          <Link to='/'>
-            <Logo   />
-          </Link>
-
-          <div className="grid grid-flow-col gap-2">
+    <motion.header
+      initial="initial"
+      animate="animate"
+      variants={headerVariants}
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        scrolled 
+          ? 'bg-gradient-to-r from-black/95 to-gray-800/95 backdrop-blur-sm shadow-lg h-20' 
+          : 'bg-gradient-to-r from-black to-gray-800 h-20'
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-4 h-full">
+        <div className="flex justify-between items-center h-full">
+          {/* Logo */}
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          >
             <Link to="/">
-              <button
-                className={`${
-                  isButtonSelected('/') ? 'border border-white text-white rounded' : ''
-                } text-white font-bold px-4 py-2 hover:bg-button hover:text-white rounded focus:outline-none`}
-              >
-                {t('navigation.home')}
-              </button>
+              <Logo width={100} height={30} className="transition-transform" />
             </Link>
-            <Link to="/dealer">
-              <button
-                className={`${
-                  isButtonSelected('/dealer') ? 'border border-white text-white rounded' : ''
-                } text-white font-bold px-4 py-2 hover:bg-button hover:text-white rounded focus:outline-none`}
-              >
-                {t('navigation.roomspage')}
-              </button>
-            </Link>
-          
-            <Link to="/contact">
-              <button
-                className={`${
-                  isButtonSelected('/contact') ? 'border border-white text-white rounded' : ''
-                } text-white font-bold px-4 py-2 hover:bg-button hover:text-white rounded focus:outline-none`}
-              >
-                {t('navigation.contact')}
-              </button>
-            </Link>
-          </div>
-          <LangSwitcher />
-        </div>
-      )}
+          </motion.div>
 
-      {isMobile && (
-        <AppBar position="static" style={{ backgroundColor: '#ffffff', color: '#ffffff' }}>
-          <Toolbar className="flex justify-between border-b p-2 bg-headerBackground text-white">
-            <Link to='/'>
-              <Logo src={'/logo.png'} width={66} height={66} />
-            </Link>
-            <IconButton edge="start" aria-label="menu" onClick={toggleDrawer(true)}>
-              <MenuIcon style={{ color: '#ffffff' }} />
-            </IconButton>
-            <Drawer anchor="top" open={drawerOpen} onClose={toggleDrawer(false)}>
-              <div className="flex flex-col items-center p-4">
-                {list}
-                <LangSwitcher />
-              </div>
-            </Drawer>
-          </Toolbar>
-        </AppBar>
-      )}
-    </>
+          {/* Desktop Navigation */}
+          {!isMobile && (
+            <nav className="hidden md:flex space-x-2">
+              {navItems.map((item) => (
+                <motion.div
+                  key={item.path}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  <Link
+                    to={item.path}
+                    className={`px-3 py-1.5 rounded-md transition-all duration-200 text-sm font-medium ${
+                      isActive(item.path)
+                        ? 'bg-white/10 text-white shadow-inner'
+                        : 'text-gray-300 hover:text-white hover:bg-white/5'
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                </motion.div>
+              ))}
+            </nav>
+          )}
+
+          {/* Mobile Menu Button */}
+          {isMobile && (
+            <motion.button
+              whileTap={{ scale: 0.9 }}
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-white p-1.5 rounded-md hover:bg-white/10"
+            >
+              {isOpen ? <CloseIcon /> : <MenuIcon />}
+            </motion.button>
+          )}
+        </div>
+
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {isMobile && isOpen && (
+            <motion.div
+              initial="closed"
+              animate="open"
+              exit="closed"
+              variants={mobileMenuVariants}
+              className="absolute top-full left-0 right-0 bg-gradient-to-r from-black/95 to-gray-800/95 backdrop-blur-sm shadow-lg"
+            >
+              <nav className="flex flex-col p-2 space-y-1">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    onClick={() => setIsOpen(false)}
+                    className={`px-4 py-2 rounded-md transition-all duration-200 text-sm ${
+                      isActive(item.path)
+                        ? 'bg-white/10 text-white'
+                        : 'text-gray-300 hover:text-white hover:bg-white/5'
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </nav>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    </motion.header>
   );
 };
+
+export default Header;
