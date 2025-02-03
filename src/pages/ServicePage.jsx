@@ -75,7 +75,7 @@ const ServicePage = () => {
   return (
     <motion.div initial="hidden" animate="visible" variants={containerVariants}>
       <motion.div variants={itemVariants}>
-        <Banner slides={bannerSlides} buttonText="Bize Ulaşın" phoneNumber="+903122785271" />
+        <Banner slides={bannerSlides} buttonText="Bize Ulaşın" phoneNumber="+905413813406" />
 
       </motion.div>
 

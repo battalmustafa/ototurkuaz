@@ -14,12 +14,12 @@ const Contact = () => {
 
   // Function to handle phone link click
   const handlePhoneClick = () => {
-    window.location.href = 'tel:+903122785271';
+    window.location.href = 'tel:+905413813406';
   };
 
   // Function to handle email link click
   const handleEmailClick = () => {
-    window.location.href = 'mailto:erdem.yesilyurt@ototurkuaz.com.tr';
+    window.location.href = 'mailto:info@ototurkuaz.com.tr';
   };
 
   return (
@@ -51,7 +51,7 @@ const Contact = () => {
             <Typography variant="body1" align="center" gutterBottom>
               <strong>{t("contact.phone")}</strong>{' '}
               <Link component="span" underline="hover" onClick={handlePhoneClick} color="primary">
-                0 (312) 278 52 71
+              0 541 381 34 06
               </Link>
             </Typography>
             <Typography variant="body1" align="center" gutterBottom>
