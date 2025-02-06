@@ -46,7 +46,7 @@ const Contact = () => {
       </div>
       <div className=" p-4 rounded-md bg-white space-x-4 mt-4">
             <Typography variant="body1" align="center" gutterBottom>
-              <strong>{t("contact.address")}</strong> Ototurkuaz Premium - Ottoman Center 1804 Ergazi Mah. Sk.No:6-3 Yenimahalle Ankara
+              <strong>{t("contact.address")}</strong> Ototurkuaz Service - Ottoman Center 1804 Ergazi Mah. Sk.No:6-3 Yenimahalle Ankara
             </Typography>
             <Typography variant="body1" align="center" gutterBottom>
               <strong>{t("contact.phone")}</strong>{' '}
