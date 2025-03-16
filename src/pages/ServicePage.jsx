@@ -7,12 +7,16 @@ import Steps from "../common/components/Steps"
 import GalleryPage from "../common/components/GalleryPage"
 import Testimonial from "../common/components/Testimonial"
 import Contact from "../common/components/Contact"
+import CustomerSlider from "../common/components/CustomerSlider"
+import { customers } from "../data/customers"
+import Certifications from "../common/components/Certifications"
 
 const bannerSlides = [
   {
     image: "assets/header1.jpg",
     title: "Ototurkuaz Service",
     description: "BMW ve MINI araçlarınız için özel servis hizmeti sağlamaktayız.",
+    badge: "/images/TSE_logo.svg"
   },
   {
     image: "assets/gallery/service/4.jpg",
@@ -76,17 +80,25 @@ const ServicePage = () => {
     <motion.div initial="hidden" animate="visible" variants={containerVariants}>
       <motion.div variants={itemVariants}>
         <Banner slides={bannerSlides} buttonText="Bize Ulaşın" phoneNumber="+905413813406" />
-
       </motion.div>
-
+      
+      
       <motion.div variants={itemVariants}>
-      <ServiceGrid />
-
+        <ServiceGrid />
       </motion.div>
-
+      
+      <motion.div variants={itemVariants}>
+        <CustomerSlider 
+          items={customers} 
+          title="Kurumsal Müşterilerimiz"
+          logoSize={120}
+          backgroundColor="#f5f5f5"
+          grayscale={true}
+        />
+      </motion.div>
+      
       <motion.div variants={itemVariants}>
         <ServiceContent />
-
       </motion.div>
 
       <motion.div variants={itemVariants}>
@@ -102,6 +114,8 @@ const ServicePage = () => {
         />
       </motion.div>
 
+      
+
       <motion.div variants={itemVariants}>
         <Testimonial />
       </motion.div>
@@ -109,9 +123,14 @@ const ServicePage = () => {
       <motion.div variants={itemVariants}>
         <Contact />
       </motion.div>
+
+      <motion.div variants={itemVariants}>
+        <Certifications />
+      </motion.div>
     </motion.div>
   )
 }
+
 
 export default ServicePage
 

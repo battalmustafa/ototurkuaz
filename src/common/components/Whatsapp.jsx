@@ -6,7 +6,7 @@ export const Whatsapp = () => {
   const location = useLocation();
   const isMobile = window.innerWidth <= 768; // Adjust the breakpoint according to your design
   const handleWhatsAppClick = () => {
-    let phoneNumber =  '+905413813406' ; // Replace with the phone number you want to open in WhatsApp
+    let phoneNumber =  '+905417103605' ; // Replace with the phone number you want to open in WhatsApp
 
     // Extract phone number from the URL if available
     // const urlParams = new URLSearchParams(location.search);

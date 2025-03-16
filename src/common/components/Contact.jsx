@@ -50,8 +50,13 @@ const Contact = () => {
             </Typography>
             <Typography variant="body1" align="center" gutterBottom>
               <strong>{t("contact.phone")}</strong>{' '}
+              <br />
               <Link component="span" underline="hover" onClick={handlePhoneClick} color="primary">
               0 541 381 34 06
+              </Link>
+              <br />
+              <Link component="span" underline="hover" onClick={handlePhoneClick} color="primary">
+              0 541 710 36 05
               </Link>
             </Typography>
             <Typography variant="body1" align="center" gutterBottom>
