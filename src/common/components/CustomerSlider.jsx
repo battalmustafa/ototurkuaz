@@ -35,6 +35,8 @@ const CustomerSlider = ({
               <p className="text-sm text-gray-600 font-semibold text-center">{item.name}</p>
             </div>
           ))}
+                        
+
         </div>
       </div>
     </div>

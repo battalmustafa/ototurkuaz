@@ -8,7 +8,6 @@ import GalleryPage from "../common/components/GalleryPage"
 import Testimonial from "../common/components/Testimonial"
 import Contact from "../common/components/Contact"
 import CustomerSlider from "../common/components/CustomerSlider"
-import { customers } from "../data/customers"
 import Certifications from "../common/components/Certifications"
 
 const bannerSlides = [
@@ -89,7 +88,20 @@ const ServicePage = () => {
       
       <motion.div variants={itemVariants}>
         <CustomerSlider 
-          items={customers} 
+          items={[
+            {
+              logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Anadolu_Agency_logo_2023_%282%29.svg/400px-Anadolu_Agency_logo_2023_%282%29.svg.png",
+              name: "Anadolu Ajansı"
+            },
+            {
+              logo: "https://thkd.tr/wp-content/uploads/2024/11/resim_2024-11-10_153423593.png#2516",
+              name: "Türkiye Haber Kameramanları Derneği"
+            },
+            {
+              logo: "https://raw.githubusercontent.com/battalmustafa/ototurkuaz/refs/heads/main/public/assets/parlemento.png",
+              name: "Parlamento Muhabirleri Derneği"
+            }
+          ]} 
           title="Kurumsal Müşterilerimiz"
           logoSize={120}
           backgroundColor="#f5f5f5"
