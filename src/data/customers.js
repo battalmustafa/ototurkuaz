@@ -8,7 +8,7 @@ export const customers = [
     name: "Türkiye Haber Kameramanları Derneği"
   },
   {
-    logo: "http://www.pmd.org.tr/assets/images/logo.png?v=4",
+    logo: "https://www.ototurkuaz.com.tr/public/assets/parlamento.png",
     name: "Parlamento Muhabirleri Derneği"
   },
 
