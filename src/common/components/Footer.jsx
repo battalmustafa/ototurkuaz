@@ -38,7 +38,7 @@ export const Footer = () => {
             <Link to='/contact' className="hover:underline">{t('navigation.contact')}</Link>
           </div>
           <div className="flex justify-center space-x-4">
-            <span>&copy; {currentYear} Ototurkuaz Service</span>
+            <span>&copy; {currentYear} Ototurkuaz Premium — Ankara BMW Özel Servis</span>
             <a href={process.env.PUBLIC_URL + '/pdf/ototurkuaz.pdf'} download className='hover:underline'>
               {t('Broşür indir')}
             </a>

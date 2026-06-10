@@ -46,7 +46,7 @@ const ServiceContent = () => {
           <img
             className="object-contain max-h-12"
             src={process.env.PUBLIC_URL + `/assets/${icon}` || "/placeholder.svg"}
-            alt=""
+            alt={title}
           />
         </div>
         <h2 className="text-lg text-gray-900 font-medium title-font mb-2">{title}</h2>
@@ -64,9 +64,14 @@ const ServiceContent = () => {
           animate="visible"
           variants={headerVariants}
         >
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Serviste neler var?</h1>
-          <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-            Araçlarınızın bakımı ve onarımı için sunduğumuz geniş hizmet yelpazemize göz atın.
+          <h2 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+            Ototurkuaz Ankara BMW Özel Servis Hizmetleri
+          </h2>
+          <p className="lg:w-2/3 w-full leading-relaxed text-gray-500">
+            <strong>Ankara BMW servisi</strong> olarak Ototurkuaz Premium&apos;da
+            periyodik bakımdan motor onarımına, fren sistemlerinden elektrik
+            arıza tespitine kadar tüm BMW ve MINI ihtiyaçlarınız için
+            profesyonel çözümler sunuyoruz.
           </p>
         </motion.div>
         <motion.div 
@@ -78,33 +83,33 @@ const ServiceContent = () => {
           {/* Service Items */}
           <ServiceItem
             icon="diagnosis.png"
-            title="Muayene ve Bakım"
-            description="Araçlarınızın düzenli muayene ve bakımı, motor yağı ve filtre değişimleri, fren kontrolleri ve tüm diğer bakım işlemleri."
+            title="BMW Periyodik Bakım Ankara"
+            description="Ankara BMW servis kapsamında düzenli muayene, motor yağı ve filtre değişimi, fren kontrolleri ve tüm periyodik bakım işlemleri Ototurkuaz güvencesiyle."
           />
           <ServiceItem
             icon="electric-vehicle.png"
-            title="Elektrik Sistemleri"
-            description="Araçların elektrik sistemlerinde oluşabilecek arızaların tespiti ve onarımı, akü değişimi, far ve aydınlatma sistemlerinin kontrolü."
+            title="BMW Elektrik & Arıza Tespiti"
+            description="Ankara BMW özel servis olarak elektrik arızalarının diagnostik cihazlarla tespiti ve onarımı, akü değişimi, far ve aydınlatma sistem kontrolleri."
           />
           <ServiceItem
             icon="disc-brake.png"
-            title="Fren Sistemleri"
-            description="Fren diskleri ve balatalarının kontrolü, değişimi ve fren hidroliği bakımı. Güvenli sürüş için fren sistemlerinizin tam ve eksiksiz çalışmasını sağlıyoruz."
+            title="BMW Fren Sistemi Bakımı"
+            description="BMW fren disk ve balata değişimi, fren hidroliği bakımı. Ankara bmw servis deneyimimizle güvenli sürüş için eksiksiz fren bakımı."
           />
           <ServiceItem
             icon="car-lights.png"
-            title="Aydınlatma Sistemleri"
-            description="Aydınlatma sistemlerinin kontrolü ve değiştirilmesi. Daha güvenli sürüş için tüm aydınlatma sistemlerinizin tam çalışır durumda olmasını sağlıyoruz."
+            title="BMW Aydınlatma Sistemleri"
+            description="BMW ve MINI aydınlatma sistemlerinin kontrolü ve değişimi. Ototurkuaz Ankara servisinde tüm aydınlatma bileşenleri orijinal parça ile yenilenir."
           />
           <ServiceItem
             icon="car-engine.png"
-            title="Motor"
-            description="Motor arızalarının tespiti ve onarımı, performans artırıcı işlemler ve motor bakımı. Motorunuzun en iyi şekilde çalışmasını sağlıyoruz."
+            title="BMW Motor Bakım & Onarım"
+            description="Ankara BMW motor bakımı ve onarımı, performans kontrolleri ve şanzıman işlemleri. En iyi bmw servisi standartlarında uzman müdahale."
           />
           <ServiceItem
             icon="maintenance.png"
-            title="Araç Bakım & Onarım"
-            description="Araçlarınızın genel bakımı ve onarımı, küçük ve büyük ölçekli tüm tamirat işlemleri. Her türlü araç bakım ve onarım ihtiyacınıza profesyonel çözümler sunuyoruz."
+            title="BMW Yedek Parça & Genel Onarım"
+            description="Orijinal BMW yedek parça tedariki ve montajı. Ankara özel bmw servisi olarak küçük ve büyük ölçekli tüm tamirat ihtiyaçlarınıza çözüm sunuyoruz."
           />
         </motion.div>
       </div>

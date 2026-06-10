@@ -1,36 +1,63 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import {
+  DEFAULT_SEO,
+  getCanonicalUrl,
+  getRouteSeo,
+  getStructuredDataList,
+  SEO_KEYWORDS,
+  SITE_URL,
+} from '../../config/seo';
 
 const PageWrapper = ({ children, title, description }) => {
   const location = useLocation();
+  const routeSeo = getRouteSeo(location.pathname);
 
-  // Reset scroll position on component mount and navigation changes
+  const pageTitle = title || routeSeo.title || DEFAULT_SEO.title;
+  const pageDescription =
+    description || routeSeo.description || DEFAULT_SEO.description;
+  const canonicalUrl = getCanonicalUrl(location.pathname);
+  const structuredDataList = getStructuredDataList();
+  const ogImage = `${SITE_URL}/assets/gallery/logos/logoEmpty.png`;
+
   useEffect(() => {
     window.scrollTo(0, 0);
-    
   }, [location]);
 
   return (
     <div className='mx-auto px-2 bg-background animate-fade-in-slow rounded-t-3xl'>
       <Helmet>
-        <title>{title || 'Ototurkuaz'}</title>
-        <meta 
-          name="description" 
-          content={description || 'Ototurkuaz, Premium marka araç bakım, onarım ve detaylandırma hizmetlerinde uzmanlaşmış bir servistir. Güvenilir ve kaliteli hizmetlerimizle aracınızın performansını ve görünümünü en üst düzeye çıkarıyoruz.'} 
-        />
+        <html lang="tr" />
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <link rel="canonical" href={canonicalUrl} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="keywords" content="
-  Ototurkuaz, araç bakım, araba servisi, araç onarımı, motor bakımı, lastik değişimi, araba yıkama, oto detaylandırma, oto kuaför, BMW servis, özel servis, Ankara bmw servisi, Ankara araç bakımı, bmw yedek parça, bmw yağ değişimi, bmw balata, bmw disk, bmw rutin bakım, bmw yağ bakımı, araç detaylandırma, araba temizliği, otomotiv bakım, oto bakım, araç detay, servis, oto bakım, araç onarım, oto servis, otomobil servisi, araç bakım uzmanı, bmw servis uzmanı, bmw onarım, bmw bakım, otomobil detay, araç temizliği, premium araç bakımı
-"/>
-        <meta name="author" content="Ototurkuaz" />
-        <meta name="robots" content="index, follow" />
-        <meta name="og:title" content={title || 'Ototurkuaz'} />
-        <meta name="og:description" content={description || 'Ototurkuaz, araç bakım, onarım ve detaylandırma hizmetlerinde uzmanlaşmış bir servistir. Güvenilir ve kaliteli hizmetlerimizle aracınızın performansını ve görünümünü en üst düzeye çıkarıyoruz.'} />
-        <meta name="og:url" content={window.location.href} />
-        <meta name="og:type" content="website" />
-        <meta name="og:image" content={`${process.env.PUBLIC_URL}/assets/logos/logoEmpty.png`} />
-        {/* Add any other SEO tags or meta tags here */}
+        <meta name="keywords" content={SEO_KEYWORDS} />
+        <meta name="author" content="Ototurkuaz Premium" />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="geo.region" content="TR-06" />
+        <meta name="geo.placename" content="Ankara, Yenimahalle" />
+        <meta name="geo.position" content="39.9667;32.7833" />
+        <meta name="ICBM" content="39.9667, 32.7833" />
+        <meta property="og:site_name" content="Ototurkuaz Premium" />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="tr_TR" />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:alt" content="Ototurkuaz Premium - Ankara BMW Özel Servis" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={ogImage} />
+        {structuredDataList.map((data, index) => (
+          <script key={index} type="application/ld+json">
+            {JSON.stringify(data)}
+          </script>
+        ))}
       </Helmet>
       <div
         style={{

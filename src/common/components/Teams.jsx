@@ -44,7 +44,7 @@ const Teams = () => {
               <PersonIcon className="w-16 h-16 text-gray-500 flex-shrink-0 rounded-full mr-4" />
               <div className="flex-grow">
                 <h2 className="text-gray-900 title-font font-medium">
-                  Ahmet Süntar
+                  Yusuf Efe Yıldırım
                 </h2>
                 <p className="text-gray-500"></p>
               </div>
@@ -55,7 +55,7 @@ const Teams = () => {
               <PersonIcon className="w-16 h-16 text-gray-500 flex-shrink-0 rounded-full mr-4" />
               <div className="flex-grow">
                 <h2 className="text-gray-900 title-font font-medium">
-                  Kerem İbrahimoğlu
+                  Sebahattin Zeytünlü
                 </h2>
                 <p className="text-gray-500"></p>
               </div>
@@ -66,13 +66,23 @@ const Teams = () => {
               <PersonIcon className="w-16 h-16 text-gray-500 flex-shrink-0 rounded-full mr-4" />
               <div className="flex-grow">
                 <h2 className="text-gray-900 title-font font-medium">
-                  Oğuzhan Altuner
+                  Mücahit ÇİTAK
                 </h2>
                 <p className="text-gray-500"></p>
               </div>
             </div>
           </div>
-          
+          <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+            <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+              <PersonIcon className="w-16 h-16 text-gray-500 flex-shrink-0 rounded-full mr-4" />
+              <div className="flex-grow">
+                <h2 className="text-gray-900 title-font font-medium">
+                  Muhammed Raşit Karadavut
+                </h2>
+                <p className="text-gray-500"></p>
+              </div>
+            </div>
+          </div>
           {/* Add more workers and job titles as needed */}
         </div>
       </div>

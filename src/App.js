@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './common/components/Header';
 import { Footer } from './common/components/Footer';
 import { Whatsapp } from './common/components/Whatsapp';

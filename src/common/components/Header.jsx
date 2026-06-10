@@ -51,19 +51,20 @@ export const Header = () => {
       variants={headerVariants}
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-gradient-to-r from-black/95 to-gray-800/95 backdrop-blur-sm shadow-lg h-20' 
-          : 'bg-gradient-to-r from-black to-gray-800 h-20'
+          ? 'bg-gradient-to-r from-black/95 to-gray-800/95 backdrop-blur-sm shadow-lg h-24' 
+          : 'bg-gradient-to-r from-black to-gray-800 h-24'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 h-full">
         <div className="flex justify-between items-center h-full">
           {/* Logo */}
           <motion.div
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
+            className="flex-shrink-0"
           >
-            <Link to="/">
-              <Logo width={100} height={30} className="transition-transform" />
+            <Link to="/" className="inline-flex items-center">
+              <Logo className="h-10 w-auto sm:h-12 md:h-14 object-contain" />
             </Link>
           </motion.div>
 

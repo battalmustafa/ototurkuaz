@@ -43,9 +43,15 @@ const Banner = ({ slides, buttonText, phoneNumber }) => {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-center px-4"
               >
-                <h2 className="text-white text-3xl font-bold mb-3">
-                  {slide.title}
-                </h2>
+                {index === 0 ? (
+                  <h1 className="text-white text-3xl md:text-4xl font-bold mb-3">
+                    {slide.title}
+                  </h1>
+                ) : (
+                  <h2 className="text-white text-3xl font-bold mb-3">
+                    {slide.title}
+                  </h2>
+                )}
                 <p className="text-white/90 text-xl mb-5">
                   {slide.description}
                 </p>

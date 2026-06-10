@@ -9,12 +9,14 @@ import Testimonial from "../common/components/Testimonial"
 import Contact from "../common/components/Contact"
 import CustomerSlider from "../common/components/CustomerSlider"
 import Certifications from "../common/components/Certifications"
+import SeoContentSection from "../common/components/SeoContentSection"
+import SeoFaqSection from "../common/components/SeoFaqSection"
 
 const bannerSlides = [
   {
     image: "assets/header1.jpg",
-    title: "Ototurkuaz Service",
-    description: "BMW ve MINI araçlarınız için özel servis hizmeti sağlamaktayız.",
+    title: "Ankara BMW Servis | Ototurkuaz Service",
+    description: "Ankara'nın en iyi BMW özel servisi Ototurkuaz. BMW ve MINI araçlarınız için periyodik bakım, arıza tespiti, onarım ve orijinal yedek parça hizmeti.",
     badge: "/images/TSE_logo.svg"
   },
   {
@@ -78,9 +80,23 @@ const ServicePage = () => {
   return (
     <motion.div initial="hidden" animate="visible" variants={containerVariants}>
       <motion.div variants={itemVariants}>
-        <Banner slides={bannerSlides} buttonText="Bize Ulaşın" phoneNumber="+905413813406" />
+        <Banner slides={bannerSlides} buttonText="Bize Ulaşın" phoneNumber="+905417103605" />
       </motion.div>
-      
+
+      <motion.section
+        variants={itemVariants}
+        aria-label="BMW özel servis hakkında"
+        className="max-w-4xl mx-auto px-6 py-10 text-center text-gray-700"
+      >
+        <p className="text-lg leading-relaxed">
+          <strong>Ankara BMW servis</strong> ve <strong>ankara bmw özel servis</strong>{' '}
+          arayanlar için <strong>Ototurkuaz Premium</strong>, BMW ve MINI
+          markalarında uzmanlaşmış kadrosuyla <strong>en iyi BMW servisi</strong>{' '}
+          deneyimini sunar. <strong>BMW periyodik bakım</strong>, arıza tespiti,
+          motor onarımı ve orijinal yedek parça hizmetlerimizle Yenimahalle,
+          Ankara&apos;daki servisimizde aracınızı güvenle emanet edebilirsiniz.
+        </p>
+      </motion.section>
       
       <motion.div variants={itemVariants}>
         <ServiceGrid />
@@ -90,7 +106,7 @@ const ServicePage = () => {
         <CustomerSlider 
           items={[
             {
-              logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Anadolu_Agency_logo_2023_%282%29.svg/400px-Anadolu_Agency_logo_2023_%282%29.svg.png",
+              logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Anadolu_Ajans%C4%B1_logo.svg/1280px-Anadolu_Ajans%C4%B1_logo.svg.png",
               name: "Anadolu Ajansı"
             },
             {
@@ -127,6 +143,14 @@ const ServicePage = () => {
       </motion.div>
 
       
+
+      <motion.div variants={itemVariants}>
+        <SeoContentSection />
+      </motion.div>
+
+      <motion.div variants={itemVariants}>
+        <SeoFaqSection />
+      </motion.div>
 
       <motion.div variants={itemVariants}>
         <Testimonial />

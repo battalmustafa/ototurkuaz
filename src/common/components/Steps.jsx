@@ -13,7 +13,7 @@ const Steps = ({ steps, headerText, itemSpacing = "pb-4" }) => {
         transition={{ duration: 0.5 }}
         className="sm:text-4xl text-3xl font-bold title-font text-center mb-12 text-gray-900"
       >
-        ototurkuaz {headerText} sizi ne bekliyor ?
+        Ototurkuaz {headerText} sizi ne bekliyor ?
       </motion.h1>
       
       <div className="container px-5 mx-auto">

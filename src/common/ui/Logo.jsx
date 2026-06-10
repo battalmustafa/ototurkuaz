@@ -23,10 +23,10 @@ const Logo = ({ alt, width, height, className }) => {
   return (
     <img
       src={`${process.env.PUBLIC_URL + src}`}
-      alt={alt}
-      width={width || 300} // Default width if not provided
-      height={height || 37} // Default height if not provided
-      className={className}
+      alt={alt || 'Ototurkuaz Ankara Bmw Servisi'}
+      width={width}
+      height={height}
+      className={className || 'h-12 w-auto object-contain'}
     />
   );
 };

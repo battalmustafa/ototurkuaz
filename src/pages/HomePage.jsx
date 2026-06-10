@@ -15,7 +15,7 @@ const stepsData = [
   },
   {
     icon: 'diagnosis.png',
-    headerText: 'Özel BMW ve MINI Servisi',
+    headerText: 'Ankara BMW ve MINI Özel Servisi',
     subText: 'Alanında yetkin servis ekibimizle BMW ve MINI aracınıza servis hizmeti veriyoruz.'
   },
  
