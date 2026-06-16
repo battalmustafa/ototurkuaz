@@ -40,7 +40,7 @@ const HomePage = () => {
         <Banner image={ "/assets/gallery/banner/6.jpeg"} headerText={" ototurkuaz "} 
         subText={"Galeri, Servis, Detailing, Studio"}
          buttonText={"Bize Ulaşın"}
-         phoneNumber={"+903122785271"}/>
+         phoneNumber={"+95417103605"}/>
        
         <RoomList/>
         <Steps steps={stepsData} headerText={'da'} itemSpacing={"pb-4"}/>

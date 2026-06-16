@@ -5,25 +5,25 @@ import { ArrowRight } from "lucide-react"
 
 const serviceItems = [
   { 
-    title: "Araç Bakım & Onarım", 
+    title: "BMW Özel Servis - Bakım ve Onarım", 
     image: `${process.env.PUBLIC_URL}/assets/bmw-1.webp`, 
     link: "/service/bakim-onarim",
     slug: "bakim-onarim" 
   },
   { 
-    title: "Arıza Tespiti", 
+    title: "BMW Özel Servis - Arıza Tespiti", 
     image: `${process.env.PUBLIC_URL}/assets/bmw22.webp`, 
     link: "/service/ariza-tespiti",
     slug: "ariza-tespiti"
   },
   { 
-    title: "Periyodik Bakım", 
+    title: "BMW Özel Servis - Periyodik Bakım", 
     image: `${process.env.PUBLIC_URL}/assets/mini-1.jpg`, 
     link: "/service/periyodik-bakim",
     slug: "periyodik-bakim"
   },
   { 
-    title: "Yedek Parça", 
+    title: "BMW Özel Servis - Yedek Parça", 
     image: `${process.env.PUBLIC_URL}/assets/mini-3.jpg`, 
     link: "/service/yedek-parca",
     slug: "yedek-parca"

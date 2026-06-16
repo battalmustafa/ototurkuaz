@@ -1,5 +1,5 @@
 export const SITE_URL = 'https://www.ototurkuaz.com.tr';
-export const SITE_NAME = 'Ototurkuaz Premium';
+export const SITE_NAME = 'Ototurkuaz Service';
 
 export const SEO_KEYWORDS = [
   'Ototurkuaz',
@@ -35,9 +35,9 @@ export const SEO_KEYWORDS = [
 ].join(', ');
 
 export const DEFAULT_SEO = {
-  title: 'Ankara BMW Servis | Ototurkuaz Service - En İyi BMW Özel Servisi',
+  title: 'Ankara BMW Servis | Ototurkuaz - 0541 710 36 05',
   description:
-    "Ankara BMW servis arayanlar için Ototurkuaz Premium: Ankara'nın en iyi BMW özel servisi. BMW periyodik bakım, arıza tespiti, onarım ve orijinal yedek parça. Yenimahalle, Ankara.",
+    "Ankara BMW servis arayanlar için Ototurkuaz Service: Ankara'nın en iyi BMW özel servisi. BMW periyodik bakım, arıza tespiti, onarım ve orijinal yedek parça. Yenimahalle, Ankara.",
 };
 
 export const ROUTE_SEO = {

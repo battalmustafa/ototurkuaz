@@ -32,6 +32,9 @@ const PageWrapper = ({ children, title, description }) => {
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         <link rel="canonical" href={canonicalUrl} />
+        <link rel="icon" type="image/png" href={`${SITE_URL}/assets/gallery/logos/logoService.png`} />
+        <link rel="shortcut icon" type="image/png" href={`${SITE_URL}/assets/gallery/logos/logoService.png`} />
+        <link rel="apple-touch-icon" href={`${SITE_URL}/assets/gallery/logos/logoService.png`} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="keywords" content={SEO_KEYWORDS} />
         <meta name="author" content="Ototurkuaz Premium" />

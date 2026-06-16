@@ -1,21 +1,21 @@
 {
   "short_name": "Ototurkuaz",
-  "name": "Ototurkuaz Premium - BMW Özel Servis Ankara",
+  "name": "Ototurkuaz Service - BMW Özel Servis Ankara",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "favicon.png",
+      "src": "assets/gallery/logos/logoService.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "assets/gallery/logos/logoService.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#eeeeee",
-  "background_color": "#f4f4f4",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "lang": "tr"
 }
