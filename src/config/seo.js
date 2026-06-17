@@ -1,10 +1,14 @@
 export const SITE_URL = 'https://www.ototurkuaz.com.tr';
-export const SITE_NAME = 'Ototurkuaz Service';
+export const SITE_NAME = 'Ankara Bmw Servisi - Ototurkuaz';
 
 export const SEO_KEYWORDS = [
   'Ototurkuaz',
+  'Ankara Bmw Servisi',
+  'Ankara Bmw Servisi Ototurkuaz',
+  'şaşmaz bmw',  
   'Ototurkuaz BMW servis',
-  'Ototurkuaz Ankara',
+  'prime car service',
+  'prime garage ankara',
   'Ankara BMW servis',
   'Ankara BMW servisi',
   'ankara bmw servis',

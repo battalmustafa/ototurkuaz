@@ -14,18 +14,18 @@ import SeoFaqSection from "../common/components/SeoFaqSection"
 
 const bannerSlides = [
   {
-    image: "assets/header1.jpg",
+    image: "assets/bmw_ozel_servis_1.webp",
     title: "Ankara BMW Servis | Ototurkuaz Service",
-    description: "Ankara'nın en iyi BMW özel servisi Ototurkuaz. BMW ve MINI araçlarınız için periyodik bakım, arıza tespiti, onarım ve orijinal yedek parça hizmeti.",
+    description: "Ankara'nın En İyi BMW Özel Servisi",
     badge: "/images/TSE_logo.svg"
   },
   {
-    image: "assets/gallery/service/4.jpg",
+    image: "assets/bmw_ozel_servis_1.webp",
     title: "Profesyonel Ekip",
-    description: "Deneyimli teknisyenlerimiz ve modern ekipmanlarımız ile en iyi hizmeti sunuyoruz.",
+    description: "Deneyimli Teknisyenler ve Modern Ekipmanlar",
   },
   {
-    image: "assets/headermini2.jpg",
+      image: "assets/bmw_ozel_servis_1.webp",
     title: "MINI Özel Servis",
     description: "MINI araçlarınız için uzman kadro ve orijinal yedek parça ile servis sağlıyoruz.",
   },
